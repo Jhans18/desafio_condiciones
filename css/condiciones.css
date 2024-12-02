@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/*Sección 1 */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
+}
+
+.imageContainer img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    object-fit: cover;
+}
+
+/* Sección 2*/
+.articulosContainer {
+    width: 90%;
+    background-color: #3f1cbd;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.articulosContainer h1,
+.articulosContainer h3 {
+    margin-bottom: 15px;
+}
+
+.articulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.articulos .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.articulos img {
+    width: 350px;
+    height: auto;
+    object-fit:contain;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.articulos input {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.comprarArticulo {
+    margin-top: 20px;
+}
+
+.comprarArticulo button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3f1cbd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.comprarArticulo button:hover {
+    background-color: #ffffff;
+    color: #3f1cbd;
+    border: 1px solid white;
+}
+
+/*Sección 3*/
+.codeContainer {
+    width: 500px;
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.codeContainer .select {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.codeContainer select {
+    padding: 5px;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.codeContainer .button {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color:#3f1cbd ;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    width: 150px; 
+    height: 50px; 
+    line-height: 50px; 
+}
+
+.codeContainer .button .actual-text,
+.codeContainer .button .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit; 
+    font-weight: inherit;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.codeContainer .button .actual-text {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.codeContainer .button .hover-text {
+    transform: translateY(100%); 
+    opacity: 0;
+}
+
+.codeContainer .button:hover .actual-text {
+    transform: translateY(-100%); 
+    opacity: 0;
+}
+
+.codeContainer .button:hover .hover-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* Respuesta del password */
+.codeContainer #response {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
